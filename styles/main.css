@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+:root {
+    --primary-color: #6d1a1a;
+    --secondary-color: #D3AD28;
+    --accent1-color: #143141;
+    --accent2-color: #195458;
+    --accent3-color: #f6ead4;
+
+    --text-dark: #AF1B3F;
+    --text-light: #ebebeb;
+    --heading-font: "Libre Baskerville", serif;
+    --paragraph-font: "Merriweather";
+
+    --headline-color-on-white: #195458;
+    --headline-color-on-color: #D3AD28;
+    --paragraph-color-on-white: #143141;
+    --paragraph-color-on-color: #D3AD28;
+    --paragraph-background-color: #5B1B1B;
+    --nav-link-color: #5B1B1B;
+    --nav-background-color: #D3AD28;
+    --nav-hover-link-color: #f6ead4;
+    --nav-hover-background-color: #143141;
+}
+
+body {
+    font-family: var(--heading-font);
+    background-color: var(--headline-color-on-color);
+    margin: 0;
+    padding: 20px;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+nav {
+    text-align: center;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
+    padding: 60px 240px 60px 240px ;
+    /* Top, Right, Bottom, Left */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* text-align: center;
+    align-self: center; */
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-decoration: none;
+    font-size: 2em;
+    
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+#search {
+    width: 80%;
+    max-width: 300px;
+    height: 35px;
+    padding: 15px;
+    margin-top: 25px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px 5px 5px 5px;
+    font-size: 1em;
+    font-family: var(--heading-font);
+    background-color: var(--secondary-color);
+    color: var(--nav-hover-background-color);
+    text-align: center;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+
